@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Ball
+comment0.text=\ Ball\ represents\ a\ ball\ that\ is\ launched\ by\ the\ mouse\ towards\ a\ direction.\r\n\ \ \ \ Each\ time\ the\ step()\ method\ is\ called,\ it\ will\ take\ one\ step.\ \ \r\n\ For\ the\ Completion\ part,\ gravity\ should\ act\ on\ the\ ball\ by\ reducing\ its\ vertical\ speed.\r\n
+comment1.params=x\ h
+comment1.target=Ball(double,\ double)
+comment1.text=\ Construct\ a\ new\ Ball\ object.\r\n\ \ \ \ Parameters\ are\ the\ initial\ position\ (x\ and\ the\ height\ above\ the\ ground),\r\n\ \ \ \ Stores\ the\ parameters\ into\ fields\ \r\n\ \ \ \ and\ initialises\ the\ colour\ to\ a\ random\ colour\r\n\ \ SHOULD\ NOT\ DRAW\ THE\ BALL\!\r\n
+comment2.params=
+comment2.target=void\ draw()
+comment2.text=\r\n\ Draw\ the\ ball\ on\ the\ Graphics\ Pane\ in\ its\ current\ position\r\n\ (unless\ it\ is\ past\ the\ RIGHT_END\ )\r\n
+comment3.params=
+comment3.target=void\ step()
+comment3.text=\r\n\ Move\ the\ ball\ one\ step\ (DO\ NOT\ REDRAW\ IT)\r\n\ Core\:\r\n\ \ \ \ Change\ its\ height\ and\ x\ position\ using\ the\ vertical\ and\ horizonal\ steps\r\n\ Completion\:\r\n\ \ \ \ Reduce\ its\ vertical\ speed\ each\ step\ (due\ to\ gravity),\ \r\n\ \ \ \ If\ it\ would\ go\ below\ ground,\ then\ change\ its\ y\ position\ to\ ground\ level\ and\r\n\ \ \ \ \ \ set\ the\ \ vertical\ speed\ back\ to\ 0.\r\n
+comment4.params=xSpeed
+comment4.target=void\ setXSpeed(double)
+comment4.text=\r\n\ Set\ the\ horizontal\ speed\ of\ the\ ball\:\ how\ much\ it\ moves\ to\ the\ right\ in\ each\ step.\r\n\ (negative\ if\ ball\ going\ to\ the\ left).\r\n
+comment5.params=ySpeed
+comment5.target=void\ setYSpeed(double)
+comment5.text=\r\n\ Set\ the\ vertical\ speed\ of\ the\ ball\:\ how\ much\ it\ moves\ up\ in\ each\ step\r\n\ (negative\ if\ ball\ going\ down).\r\n
+comment6.params=
+comment6.target=double\ getHeight()
+comment6.text=\r\n\ Return\ the\ height\ of\ the\ ball\ above\ the\ ground\r\n
+comment7.params=
+comment7.target=double\ getX()
+comment7.text=\r\n\ Return\ the\ horizontal\ position\ of\ the\ ball\r\n
+numComments=8

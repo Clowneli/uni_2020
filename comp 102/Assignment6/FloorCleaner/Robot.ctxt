@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=Robot
+comment0.text=\ The\ robot\ is\ a\ circular\ vacuum\ cleaner\ than\ runs\ around\r\n\ a\ floor,\ erasing\ any\ "dirt".\r\n\ The\ parameters\ of\ the\ constructor\ should\ include\ the\ initial\ position,\r\n\ and\ possibly\ its\ size\ and\ color.\r\n\ It\ has\ methods\ to\ make\ it\ step\ and\ change\ direction\:\r\n\ \ step()\ makes\ it\ go\ forward\ one\ step\ in\ its\ current\ direction.\r\n\ \ changeDirection()\ makes\ it\ go\ backward\ one\ step,\ and\ then\ turn\ to\ a\ new\r\n\ \ \ \ \ (random)\ direction.\r\n\ It\ has\ methods\ to\ report\ its\ current\ position\ (x\ and\ y)\ with\ the\r\n\ \ \ \ \ getX()\ and\ getY()\ methods.\r\n\ It\ has\ methods\ to\ erase\ and\ draw\ itself\r\n\ \ draw()\ will\ make\ it\ draw\ itself,\r\n\ \ erase()\ will\ make\ it\ erase\ itself\ (cleaning\ the\ floor\ under\ it\ also\!)\r\n\r\n\ Hint\:\ if\ the\ the\ current\ direction\ of\ the\ robot\ is\ d\ (expressed\ in\r\n\ \ degrees\ clockwise\ from\ East),\ then\ it\ should\ step\r\n\ \ \ \ \ cos(d\ *\ pi/180)\ in\ the\ horizontal\ direction,\ and\r\n\ \ \ \ \ sin(d\ *\ pi/180)\ in\ the\ vertical\ direction.\r\n\ Hint\:\ see\ the\ Math\ class\ documentation\!\r\n
+comment1.params=diam\ xpos\ ypos\ color
+comment1.target=Robot(double,\ double,\ double,\ java.awt.Color)
+comment1.text=\ Construct\ a\ new\ Robot\ object.\r\n\ \ set\ its\ direction\ to\ a\ random\ direction,\ 0..360\r\n
+comment2.params=sweep2
+comment2.target=boolean\ checkColFor2(Robot)
+comment2.text=colision\ tester
+comment3.params=sweep1
+comment3.target=boolean\ checkColFor1(Robot)
+comment4.params=xpos\ ypos\ direc
+comment4.target=void\ step(double,\ double,\ double)
+comment4.text=Step\ one\ unit\ in\ the\ current\ direction\ (but\ don't\ redraw)
+comment5.params=
+comment5.target=void\ changeDirection()
+comment5.text=changeDirection\:\ move\ backwards\ one\ unit\ and\ change\ direction\ randomly
+comment6.params=
+comment6.target=void\ erase()
+comment6.text=Erase\ the\ robot
+comment7.params=
+comment7.target=void\ draw()
+comment7.text=Draw\ the\ robot
+numComments=8

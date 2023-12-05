@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=WordSearcher
+comment1.params=
+comment1.target=void\ searchPattern()
+comment1.text=\r\n\ Asks\ the\ user\ for\ a\ pattern\ and\ then\ finds\ and\ prints\ out\ (one\ per\ line)\r\n\ \ \ \ \ all\ the\ words\ in\ a\ dictionary\ that\ contain\ that\ pattern.\r\n\ At\ the\ end,\ it\ prints\ out\ how\ many\ words\ in\ the\ dictionary\ contained\r\n\ \ \ \ the\ pattern.\r\n\ It\ should\ print\ the\ words\ as\ it\ finds\ them,\ but\ should\ stop\ printing\r\n\ \ \ \ after\ it\ has\ found\ 100\ of\ them\r\n\ The\ dictionary\ is\ in\ the\ file\ dictionary.txt,\ and\ has\ one\ word\ per\ line.\r\n
+comment2.params=
+comment2.target=void\ setupGUI()
+comment2.text=set\ up\ the\ buttons
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4

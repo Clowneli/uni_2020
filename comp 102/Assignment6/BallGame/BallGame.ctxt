@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=BallGame
+comment0.text=\ Runs\ a\ simulation\ of\ launching\ balls\ at\ a\ target.\r\n
+comment1.params=
+comment1.target=void\ setupGUI()
+comment1.text=Setup\ the\ mouse\ listener\ and\ the\ buttons
+comment2.params=
+comment2.target=void\ runGameOneTarget()
+comment2.text=\r\n\ Main\ loop\ for\ the\ Core\ version\ of\ the\ game\r\n\ It\ creates\ a\ ball\ (to\ be\ launched)\ and\ a\ target\ ball\ (on\ a\ shelf)\r\n\ It\ has\ a\ loop\ that\ repeatedly\r\n\ \ \ -\ Makes\ a\ new\ ball\ if\ the\ old\ one\ has\ gone\ off\ the\ right\ end.\r\n\ \ \ -\ Makes\ the\ ball\ and\ the\ target\ ball\ take\ one\ step\r\n\ \ \ \ \ (unless\ they\ are\ still\ on\ the\ launcher\ or\ shelf)\r\n\ \ \ -\ Checks\ whether\ the\ ball\ is\ hitting\ the\ target\r\n\ \ \ -\ redraws\ the\ state\ of\ the\ game\r\n\ The\ loop\ stops\ when\ the\ target\ has\ gone\ off\ the\ right\ end\ and\ the\ ball\ is\ on\ the\ launcher.\r\n
+comment3.params=action\ x\ y
+comment3.target=void\ launch(java.lang.String,\ double,\ double)
+comment3.text=\r\n\ Launch\ the\ current\ ball,\ if\ it\ is\ still\ in\ the\ catapult,\r\n\ Speed\ is\ based\ on\ the\ position\ of\ the\ mouse\ relative\ to\ the\ ground.\r\n
+comment4.params=ball\ target\ shelfHeight
+comment4.target=void\ drawGameOneTarget(Ball,\ Ball,\ double)
+comment4.text=\r\n\ Draw\ the\ game\:\ ball,\ target,\ ground,\ launcher\ and\ shelf.\r\n
+comment5.params=
+comment5.target=void\ runGameTwoTargets()
+comment5.text=\ Version\ of\ the\ game\ with\ two\ targets.\r\n\ \ Hint\:\ drawGameTwoTargets\ has\ been\ written\ for\ you.\ \r\n
+comment6.params=ball\ target1\ target2\ shelf1Ht\ shelf2Ht
+comment6.target=void\ drawGameTwoTargets(Ball,\ Ball,\ Ball,\ double,\ double)
+comment6.text=\r\n\ Draw\ the\ game\:\ ball,\ two\ targets,\ ground,\ launcher\ and\ shelves.\r\n
+comment7.params=arguments
+comment7.target=void\ main(java.lang.String[])
+comment7.text=Create\ a\ new\ BallGame\ object\ and\ setup\ the\ interface
+numComments=8
