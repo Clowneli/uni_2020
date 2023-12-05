@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.target=FlagDrawer
+comment0.text=\r\n\ Draws\ various\ flags\r\n\r\n\ You\ can\ find\ lots\ of\ flag\ details\ (including\ the\ correct\ dimensions\ and\ colours)\r\n\ from\ \ http\://www.crwflags.com/fotw/flags/\ \ \ \ \r\n
+comment1.params=
+comment1.target=void\ drawBelgiumFlag()
+comment1.text=\ \ \ CORE\r\n\ Draw\ the\ flag\ of\ Belgium.\r\n\ The\ flag\ has\ three\ vertical\ stripes;\r\n\ The\ left\ is\ black,\ the\ middle\ is\ yellow,\ and\ the\ right\ is\ red.\r\n\ The\ flag\ is\ 13/15\ as\ high\ as\ it\ is\ wide\ (ratio\ 13\:15).\r\n
+comment2.params=
+comment2.target=void\ drawRedCrossFlag()
+comment2.text=\ \ \ CORE\r\n\ \ The\ Red\ Cross\ flag\ consists\ of\ a\ white\ square\ with\ a\ red\ cross\ in\ the\ center\r\n\ \ The\ cross\ can\ be\ drawn\ as\ a\ horizontal\ rectangle\ and\ a\ vertical\ rectangle.\r\n
+comment3.params=
+comment3.target=void\ drawPacman()
+comment3.text=\ \ \ COMPLETION\r\n\ \ Pacman\r\n\ \ A\ red\ pacman\ facing\ up\ on\ a\ black\ background\ chasing\ yellow,\ green,\ and\ blue\ dots.\r\n\ \ \r\n
+comment4.params=
+comment4.target=void\ drawGreenlandFlag()
+comment4.text=\ \ \ COMPLETION\r\n\ Draw\ the\ flag\ of\ Greenland.\r\n\ The\ top\ half\ of\ the\ flag\ is\ white,\ and\ the\ bottom\ half\ is\ red.\r\n\ There\ is\ a\ circle\ in\ the\ middle\ (off-set\ to\ left)\ \ which\ is\r\n\ also\ half\ white/red\ but\ on\ the\ opposite\ sides.\r\n\ The\ flag\ is\ 2/3\ as\ high\ as\ it\ is\ wide\ (ratio\ 2\:3).\r\n
+comment5.params=
+comment5.target=void\ drawKoruFlag()
+comment5.text=\ \ \ CHALLENGE\r\n\ Draw\ the\ Koru\ Flag.\r\n\ It\ was\ one\ of\ the\ new\ flag\ designs\ for\ the\ 2016\ referendum,\r\n\ designed\ by\ Sven\ Baker\ from\ Wellington\r\n\ The\ flag\ is\ 1/2\ as\ high\ as\ it\ is\ wide\ (ratio\ 1\:2).\r\n
+comment6.params=
+comment6.target=void\ drawSamoaFlag()
+comment6.text=\ \ \ CHALLENGE\r\n\ Draw\ the\ flag\ of\ Samoa,\r\n\ The\ flag\ is\ 1/2\ as\ high\ as\ it\ is\ wide\ (ratio\ 1\:2).\r\n\ A\ red\ field\ with\ the\ blue\ rectangle\ on\ the\ top\ left\ quadrant\ bearing\ the\ Southern\ Cross\r\n\ \ \ \ of\ four\ white\ larger\ five-pointed\ stars\ and\ the\ smaller\ star\ in\ the\ center.\r\n\ A\ full\ marks\ solution\ will\ have\ a\ method\ for\ drawing\ a\ 5\ pointed\ star,\r\n\ and\ call\ that\ method\ for\ each\ of\ the\ stars\r\n
+comment7.params=
+comment7.target=void\ setupGUI()
+comment8.params=arguments
+comment8.target=void\ main(java.lang.String[])
+numComments=9
