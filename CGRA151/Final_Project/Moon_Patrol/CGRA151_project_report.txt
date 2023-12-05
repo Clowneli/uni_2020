@@ -1,0 +1,28 @@
+CGRA151 Project Report
+
+Student name: [Elisha Jones]
+Student ID: [300573902]
+Name of sgame/artwork: [Moon Patrol]
+
+Vision:
+1. Game concept: Make a recreation of the 1982 arcade game: Moon Patrol
+2. Game play: I will have a buggy (moon buggy) that's goal is to make it past checkpoints across the moon's surface back to the shuttle to leave the moon. There will be obstacles in the way of the moon buggy like moon rocks / craters and aliens that are attempting to stop the buggy from getting home. The player will have guns attached to the buggy that the player can use to destroy the UFOs (aliens) and rocks on the surface.
+3. Visual design: a landscape hopefully moving in the background (static for base game) with a buggy moving across the surface of the moon. Will have rocks and dips in the moon surface that the buggy can crash into. Will have alien space ships that attempt to stop the moon lander by dropping bombs on it. I will try to create all needed sprites to have as references that the game can call upon.
+See https://www.youtube.com/watch?v=C2XLqrWvd6I for inspiration (original game)
+
+Achievement:
+I have had to make a few sacrifices in terms of gameplay in terms of techincal challenges. Some of thes sacrifices include no scoring system, no rocky floor and no working holes. 
+Overall however, I am happy with the outcome of my game and the progress I have made towards it. 
+The basic functions of the game work well together and I believe that the design of the game work well and provides good recreation of a retro style game..
+
+Technical Challenges:
+I had a few challenges that lead to sacrifices durring the production of my program.
+Some of the sacrifices include not being able to have holes in the ground, not being able to shoot the aliens and not having the aliens drop mines.
+A few challenges that i had to overcome to get the main game working involved things like figuring out how to make the buggy move without traveling off the screen and finding away to have the objects move in a belivable manner.
+I resolved this issue by choosing to have the background move rather than the buggy itself to give the illusion of it moving. I also worked the rocks and aliens around this idea to paint the idea of them moving with the buggy and background
+Another challenge involved working my menus into the game as I have not had alot of experience of getting these working. I eventually came up with a work around with running an internal if/else system that will pick if the game is running or in the menu.
+Annother issue was at the beginning with my over ambition with how i wanted the game to work and having to reign in these expectations to slow down and focus on what i could or couldnt do. This helped as i was able to more effectivly code and make the game and focus on getting key things to work rather than trying to go above and beyond what i knew how to do.
+
+Reflection
+A take away that I had with this program was to not be too overambisious with my project. This initial view of the project lead to difficulty with trying to work too many things together at once. Once i made this realisation it became reletivly easy to find a footing and progress with the creation of the game. That being said i still had my challenges and had to make sacrifices in order to have a working and functioning final product. 
+In the end, appart from a few glitches (like the background clipping and not correctly connecting somethimes), i was happy with my final product and how it functioned.

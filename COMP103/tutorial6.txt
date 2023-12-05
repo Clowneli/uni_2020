@@ -1,0 +1,58 @@
+Submit this file with your answer for tutorial 6.
+You should edit the file with notepad or textedit, not with BlueJ
+
+This is practice for the test!
+
+You will get your marks for the tutorial if you have made some
+reasonable attempt - the code does not have to be all correct to get
+the marks. 
+
+
+Complete the makeArtistMap() method below.  It uses the Song class.
+
+/** SongManager class contains two field:
+ *  a Set of Songs,
+ *  a map that associates each artist name with a List of all the
+ *     songs by that artist. Each list should be ordered by the year of the song. 
+ */
+public class SongManager { 
+    private Set<Song> allSongs;                    // Collection of Songs
+    private Map<String, List<Song>> songsByArtist; // Map: artist -> Sorted list of Song
+
+  /**  
+   * Constructs the songsByArtist map using the collection of Songs in allSongs,
+   * Each List of songs in the map should be sorted by year.
+   */ 
+    public void makeArtistMap(){ 
+        songsByArtist = new HashMap<String, List<Song>>();       
+        // ANSWER: 
+	for (Song song: allSongs){
+		songsByArtist.put(song.getArtist(),song);
+	}
+	songsByArtist.sort( );
+ 
+     }
+	
+
+
+
+/** Class to represent information about a song */
+public class Song { 
+    private int year; 
+    private String artist, title; 
+  
+    public Song(String artist, String title, int yr) { 
+        this.year = yr; 
+        this.artist = artist; 
+        this.title = title; 
+    } 
+    public int compareTo(Song other){
+	if (getYear() > other.getYear()){return 1;}
+	else if (getYear() < other.getYear()){return -1;}
+	else{return 0;}
+    }
+    
+    public String  getArtist() { return artist; } 
+    public String  getTitle()  { return title; } 
+    public Integer getYear()   { return year; } 
+} 

@@ -1,0 +1,317 @@
+COMP 103   Data Structures and Algorithms
+
+Test 1
+
+1 Sept 2021:
+5pm - 6pm  NZ time.
+
+ 
+--------------------------------------
+TYPE YOUR NAME AND ID HERE:
+   name: Elisha Jones
+   id: 300573902
+--------------------------------------
+
+Time allowed: 60 minutes
+
+Instructions:
+
+* Type your answers in this file. Use notepad (on Windows) or textedit (on Macintosh) to edit this file.  
+
+* Submit the file with your answers at the end of the test time.
+
+* There are 50 marks in total
+
+* You must NOT use BlueJ or any other Java editor. 
+
+* Brief Java documentation is provided with the test, on the same web page as this file:
+  
+* You may not access any web pages except 
+  - https://ecs.wgtn.ac.nz/Courses/COMP103_2021T2/TermTest
+  - The two documentation files linked on the Test page
+  - The ecs submission system at  https://apps.ecs.vuw.ac.nz/submit/COMP103/Test_1
+
+* If you think some question is unclear or has an error, ask for clarification by emailing
+  comp103-help@ecs.vuw.ac.nz.
+  We will attempt to answer immediately.
+
+* You may not communicate with anyone (except via comp103-help@ecs.vuw.ac.nz) while working on the test. 
+
+=======================================================
+
+Questions
+  1:  [12 marks] Properties of Collections 
+  2:  [14 marks] Programming with Lists, Sets, Maps, and Queues  
+  3:  [11 marks] Complexity analysis (Big-O)  
+  4:  [13 marks] Programming with Lists, Sets, and sorting 
+
+
+=======================================================
+Question 1: Properties of Collections [12 marks]
+
+
+For each property in (a) to (d), state which of the listed Collection
+types or classes have that property.
+Delete TRUE or false to show your answer
+
+
+(a) [2 marks] Items in the collection are stored in the order they were added:
+     (i)   Stack        	TRUE  
+     (ii)  Set          	TRUE  
+     (iii) Queue        	TRUE  
+     (iv)  PriorityQueue	TRUE  
+
+(b) [2 marks] Items in the collection are only removed from one end:
+     (i)   Set          	false   
+     (ii)  Stack        	TRUE
+     (iii) List         	false   
+     (iv)  Queue        	TRUE
+
+(c) [2 marks] The item at position k in the collection can be removed
+    (assuming there are at least k items in the collection).
+     (i)   HashSet      	TRUE  
+     (ii)  TreeSet      	false   
+     (iii) ArrayList    	TRUE   
+     (iv)  ArrayDeque   	false   
+
+(d) [2 marks] The collection may contain duplicate items:
+     (i)   Set          	false   
+     (ii)  List         	TRUE  
+     (iii) Stack        	TRUE 
+     (iv)  Queue        	TRUE
+
+
+(e) [2 marks] Which of the following statements about Maps is true? (delete the false ones)
+     (i)   Values must be added to a Map with a key                	TRUE
+     (ii)  A Map can contain duplicate keys.                       	false   
+     (iii) A Map can contain duplicate values.                     	TRUE  
+     (iv)  A TreeMap contains key-value pairs sorted by the values.	false   
+     (v)   A HashMap contains key-value pairs sorted by the keys.  	TRUE 
+
+
+(f) [2 marks] Explain why it is more efficient to use an ArrayDeque than an
+ArrayList to store a queue of items.
+
+ANSWER: 
+A deque only allows values to be take off at either end of the queue and can be called from a set funtion. 
+it also allows for priority queues to be used to set an order of importance.
+
+
+
+
+
+
+=======================================================
+Question 2: Programming with Lists, Sets, Maps, and Queues  [14 marks]
+
+
+
+-----------------------------------------
+(a)  [5 marks] Complete the following findUnique(...) method.
+     Your  answer should be as efficient as possible.
+
+    /**
+     * findUnique() is given a List of words which may contain many duplicates.
+     * It should return a Set of all the words that occur only once in the list
+     * It should return an empty set if the list is null or empty.
+     */
+    public Set<String> findUnique(List<String> words){
+    //ANSWER:
+    HashMap<String, int> wordCount = new HashMap<string, int>();
+    for (String word : words){
+	if (wordCount.containsKey(word)){wordCount.put(word, wordCount.getValue()+1);}
+	else{ wordCount.put(word, 1);}
+    }
+    set<String> wordList = new HashSet<String>();
+    for (map.Entry word : wordCount){
+	if( word.getValue() == 1){
+	    wordList.add(word.getKey());
+	}
+    }
+    return wordList;
+
+
+    }
+
+
+
+-----------------------------------------
+(b) [6 marks]  Complete the following findAll(...) method.
+
+  /**
+   * finalAll is given a Map (from Strings to Items) and a Set of Strings.
+   * It returns a new Set containing every Item in map that
+   *   is associated with a String in queries.
+   * It returns an empty set if map or queries are null
+   */
+    public Set<Item> findAll(Map<String,Item> map, Set<String> queries){
+    //ANSWER:
+    Set<Item> found = new HashSet<Item>();
+    for (map.Entry toFind : map){
+	for (String query : queries){
+	    if (map.containsKey(query)){found.add(map.getValue);}
+	}
+    }
+    return found;
+
+
+    }
+
+-----------------------------------------
+(c) [3 marks] Give two reasons why the size of the Set returned by findAll(...) might
+be smaller than the size of queries.
+
+ANSWER: 
+Because there might not be any values present for a given key within queries
+hashSets do not allow duplicates so if any value runs of multiple queries then it will only be added once
+
+
+
+
+================================================================
+Question 3: Big-O Complexity [11 marks]
+
+
+For each of the code fragments below, work out the worst-case big-O cost of the
+code, assuming that myItems is an unordered collection of n Strings.
+
+For each of the specified lines (<===), fill in
+   * The cost of doing the line:  
+   * The maximum times the line will be run: 
+
+Then fill in the total cost of the code.
+
+Possible answers are:
+   O(1),   O(log(n)),     O(n),   O(n log(n)),
+   O(n^2), O(n^2 log(n)), O(n^3), O(n^3 log(n))
+
+Note: n^2 means "n squared", and n^3 means "n cubed"
+
+---------------------------------
+(a) [3 marks]
+
+1     List<String> answer = new ArrayList<String>(); 
+2     for (String value : myItems){
+3        answer.add(value);          //<=====
+4     }
+
+ANSWER:
+ Line 3: cost = O( n       )   times=O( 1    )
+   Total cost = O( n       )
+
+
+
+
+----------------------------------
+(b) [4 marks]
+1    List<String> answer = new ArrayList<String>();
+2    for (String value : myItems){
+3       if (! answer.contains(value) ){    //<=====      
+4          answer.add(value);              //<=====
+5         }
+6      }
+7    Collections.sort(answer);             //<=====
+
+ANSWER:
+ Line 3: cost = O( 1       )   times = O( 1    )
+ Line 4: cost = O( n       )   times = O( 1    )
+ Line 7: cost = O( n log(n)       )   times = O(    ) 
+   Total cost = O( n log(n)       )               
+
+
+
+----------------------------------
+(c) [4 marks] (Hint: note the TreeSet)
+
+1   Set<String> answer = new TreeSet<String>();
+2   for (String value1 : myItems){
+3       for (String value2 : myItems){
+4           if (value1.equals(value2) ){   //<=====            
+5              answer.add(value1);         //<=====
+6            }
+7       }
+8   }
+ 
+ANSWER:
+ Line 4: cost = O(  1     )   times= O(  n   )
+ Line 5: cost = O(  log(n)     )   times= O(  1   )
+   Total cost = O(  log(n)     )
+
+
+=======================================================
+Question 4: Programming with Lists and sorting  [13 marks]
+
+Each month, a charity funding agency has to allocate the money it has
+raised to charitable projects.  It has a large set of requests for
+funding but it can't fund all the requests, and must choose the best
+projects to fund.
+
+You are to write a method to do the allocation.
+
+-------------------------
+/** Class to represent information about funding Requests */
+public class Request {
+   private String name;     // The name of the project
+   private double cost;     // How much money the project needs. (Always more than 0)
+   private double benefit;  // How much social value the project will achieve.
+                            // It may be larger or smaller than the cost.
+
+   public Request(String n, double b, double c){
+       name = n;  benefit = b;  cost = c;
+   }
+   public String getName()   { return name; }
+   public double getBenefit(){ return benefit; }
+   public double getCost()   { return cost; }
+}
+
+-------------------------
+(a) [9 marks] Complete the allocate(...) method below to return a
+Set of good Requests, keeping the total cost within the amountRaised.
+Generally, requests with a high ratio of benefit to cost are good
+choices.
+
+Your method should
+ - Sort the Requests by their (benefit divided by cost); Requests with a higher
+   value of (benefit/cost) should be earlier in the ordering.
+ - Iterate through the Requests, adding each Request to the answer as
+   long as it doesn't take the total cost over the amountRaised.
+ - return the answer
+
+   (Note, Request is not Comparable)
+
+   /**
+   * Given an unordered list of requests and the amount of money to allocate,
+   * Return a Set of the best (high benefit/cost) requests whose total
+   * cost is at most amountRaised 
+   */
+   public Set<Request> allocate(List<Request> requests, double amountRaised){
+   //ANSWER: profit = benifit-cost
+	List<Request> allowed = new arrayList<Request>();
+	for (Request request : requests){
+		if(request.getCost >= amountRaised){
+			allowed.add(request);
+		}
+	}
+	return allowed;
+
+
+   }
+
+------------
+
+(b) [4 marks] The optimal allocation would be the set of requests with the maximum total
+benefit without letting the total cost go over amountRaised.
+
+The allocate(...) method above may not give the optimal allocation. (It is too "greedy"!)
+
+Give an example of a list of 3 to 5 requests and an amountRaised,
+where the allocate(...) method would NOT give the optimal allocation.
+(Show each request by its cost and benefit).
+
+ANSWER:
+  * set of requests:  { (                          }            
+  * amountRaised:     $100             
+  * the optimal allocation:   {                          } 
+  * answer from allocate(...):{                          }
+
+
